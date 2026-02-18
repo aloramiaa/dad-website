@@ -52,7 +52,7 @@ dad-website/
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/dad-website.git
+    git clone https://github.com/heartless1470/dad-website.git
     ```
 2.  **Open the project:**
     Navigate to the project directory and open `index.html` in your web browser.
