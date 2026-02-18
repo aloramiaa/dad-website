@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Duffus Flooring</title>
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
+    <header id="navbar">
+        <div class="container nav-container">
             <nav>
                 <a href="index.html" class="logo">Duffus <span>Flooring</span></a>
                 <ul class="nav-links">
@@ -32,62 +34,94 @@
         </div>
     </header>
 
-    <section class="about-hero"
-        style="background-color: var(--primary-color); color: white; padding: 60px 0; text-align: center;">
-        <div class="container">
-            <h1 style="color: white;">About Duffus Flooring</h1>
+    <!-- Page Header -->
+    <section class="hero" style="height: 50vh; min-height: 400px;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container" data-aos="fade-up">
+            <h1>About <span class="highlight-text">Duffus Flooring</span></h1>
             <p>Dedicated to Quality, Integrity, and Craftsmanship.</p>
         </div>
     </section>
 
-    <section class="about-content" style="padding: 80px 20px;">
-        <div class="container" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
-            <div style="flex: 1; min-width: 300px;">
-                <img src="https://placehold.co/600x400/e0e0e0/333?text=Our+Team" alt="Duffus Flooring Team"
-                    style="border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
-            </div>
-            <div style="flex: 1; min-width: 300px;">
-                <h2 style="margin-bottom: 20px;">Our Story</h2>
-                <p style="margin-bottom: 20px;">Founded on the principles of hard work and dedication, Duffus Flooring
-                    has been serving the community with exceptional flooring solutions for over a decade. What started
-                    as a small family business has grown into a trusted name in the industry, known for our attention to
-                    detail and commitment to customer satisfaction.</p>
-                <p>We believe that your floors are the foundation of your home. They set the tone for your entire living
-                    space. That's why we take the time to understand your vision and bring it to life with precision and
-                    care.</p>
+    <!-- About Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="about-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 50px; align-items: center;">
+                <div class="about-image-col" data-aos="fade-right">
+                    <img src="https://placehold.co/600x600/e0e0e0/333?text=Our+Team" alt="Duffus Flooring Team"
+                        style="border-radius: 20px; box-shadow: 20px 20px 0 var(--accent-color);">
+                </div>
+                <div class="about-text-col" data-aos="fade-left">
+                    <h2 class="section-title text-left" style="color: var(--primary-color);">Our Story</h2>
+                    <p style="color: #555; font-size: 1.1rem; line-height: 1.8;">Founded on the principles of hard work
+                        and dedication, Duffus Flooring has been serving the community with exceptional flooring
+                        solutions for over a decade. What started as a small family business has grown into a trusted
+                        name in the industry, known for our attention to detail and commitment to customer satisfaction.
+                    </p>
+                    <p style="color: #555; font-size: 1.1rem; line-height: 1.8;">We believe that your floors are the
+                        foundation of your home. They set the tone for your entire living space. That's why we take the
+                        time to understand your vision and bring it to life with precision and care.</p>
+
+                    <div class="stats-row mt-4" style="display: flex; gap: 40px;">
+                        <div class="stat-item">
+                            <h3 style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 0;">10+</h3>
+                            <p style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">Years Experience
+                            </p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 0;">500+</h3>
+                            <p style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">Projects
+                                Completed</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="mission" style="background-color: #f0f0f0; padding: 80px 20px; text-align: center;">
-        <div class="container">
+    <!-- Mission -->
+    <section class="section-padding" style="background-color: var(--bg-color); color: white;">
+        <div class="container text-center" data-aos="fade-up">
             <h2 class="section-title">Our Mission</h2>
-            <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; font-style: italic;">"To provide superior
-                flooring installations and repairs with unwavering honesty and craftsmanship, creating spaces that our
-                customers love to come home to."</p>
+            <div
+                style="max-width: 800px; margin: 0 auto; padding: 40px; border: 1px solid var(--accent-color); border-radius: 10px; position: relative;">
+                <i class="fas fa-quote-left"
+                    style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); background: var(--bg-color); padding: 0 20px; color: var(--accent-color); font-size: 2rem;"></i>
+                <p style="font-size: 1.5rem; font-style: italic; font-family: var(--font-heading);">"To provide superior
+                    flooring installations and repairs with unwavering honesty and craftsmanship, creating spaces that
+                    our customers love to come home to."</p>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-col">
+                <div class="footer-col" data-aos="fade-up">
                     <h3>Duffus Flooring</h3>
                     <p>Providing exceptional flooring solutions for residential and commercial spaces.</p>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
                     <h3>Quick Links</h3>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                    <p><i class="fas fa-envelope"></i> info@duffusflooring.com</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@duffusflooring.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -96,6 +130,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 

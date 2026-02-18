@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Duffus Flooring</title>
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
+    <header id="navbar">
+        <div class="container nav-container">
             <nav>
                 <a href="index.html" class="logo">Duffus <span>Flooring</span></a>
                 <ul class="nav-links">
@@ -32,109 +34,103 @@
         </div>
     </header>
 
-    <section class="page-header"
-        style="background-color: var(--primary-color); color: white; padding: 60px 0; text-align: center;">
-        <div class="container">
-            <h1 style="color: white;">Our Services</h1>
-            <p>Comprehensive flooring solutions tailored to your needs.</p>
+    <!-- Page Header -->
+    <section class="hero" style="height: 50vh; min-height: 400px;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container" data-aos="fade-up">
+            <h1>Our <span class="highlight-text">Services</span></h1>
+            <p>Comprehensive flooring solutions tailored to your unique needs.</p>
         </div>
     </section>
 
-    <section class="services-list" style="padding: 80px 20px;">
+    <!-- Services Grid -->
+    <section class="section-padding">
         <div class="container">
-
-            <div class="service-block"
-                style="display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 80px; align-items: center;">
-                <div style="flex: 1; min-width: 300px;">
-                    <img src="https://placehold.co/600x400/D4AF37/white?text=Hardwood+Installation"
-                        alt="Hardwood Flooring" style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <div class="services-grid">
+                <!-- Hardwood -->
+                <div class="service-card" data-aos="fade-up">
+                    <div class="icon-box">
+                        <i class="fas fa-tree service-icon"></i>
+                    </div>
+                    <h3>Hardwood Flooring</h3>
+                    <p>Nothing beats the warmth and character of genuine hardwood. We offer expert installation,
+                        sanding, and refinishing.</p>
+                    <ul class="feature-list mt-4" style="text-align: left; padding: 0 20px;">
+                        <li><i class="fas fa-check"></i> Solid & Engineered Wood</li>
+                        <li><i class="fas fa-check"></i> Dust-Free Refinishing</li>
+                        <li><i class="fas fa-check"></i> Custom Staining</li>
+                    </ul>
                 </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <h2 style="color: var(--primary-color);">Hardwood Flooring</h2>
-                    <p class="service-desc" style="margin-top: 15px; margin-bottom: 20px;">Nothing beats the warmth and
-                        character of genuine hardwood. We offer expert installation of solid and engineered wood floors.
-                        We also specialize in sanding and refinishing existing hardwood to bring it back to its original
-                        glory.</p>
-                    <ul style="list-style: disc; margin-left: 20px; color: var(--text-color);">
-                        <li>Solid & Engineered Wood Installation</li>
-                        <li>Dust-Free Sanding & Refinishing</li>
-                        <li>Staining & Custom Finishes</li>
-                        <li>Repair & Restoration</li>
+
+                <!-- Tile -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box">
+                        <i class="fas fa-th service-icon"></i>
+                    </div>
+                    <h3>Tile & Stone</h3>
+                    <p>From elegant ceramic to durable porcelain and natural stone. Perfect for kitchens, bathrooms, and
+                        entryways.</p>
+                    <ul class="feature-list mt-4" style="text-align: left; padding: 0 20px;">
+                        <li><i class="fas fa-check"></i> Porcelain & Ceramic</li>
+                        <li><i class="fas fa-check"></i> Custom Backsplashes</li>
+                        <li><i class="fas fa-check"></i> Heated Floors</li>
+                    </ul>
+                </div>
+
+                <!-- Luxury Vinyl -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <i class="fas fa-layer-group service-icon"></i>
+                    </div>
+                    <h3>Luxury Vinyl Plank</h3>
+                    <p>Get the look of wood or stone with waterproof durability. Ideal for basements and high-traffic
+                        areas.</p>
+                    <ul class="feature-list mt-4" style="text-align: left; padding: 0 20px;">
+                        <li><i class="fas fa-check"></i> 100% Waterproof</li>
+                        <li><i class="fas fa-check"></i> Scratch Resistant</li>
+                        <li><i class="fas fa-check"></i> Wide Style Variety</li>
                     </ul>
                 </div>
             </div>
-
-            <div class="service-block"
-                style="display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 80px; align-items: center; flex-direction: row-reverse;">
-                <div style="flex: 1; min-width: 300px;">
-                    <img src="https://placehold.co/600x400/0A192F/white?text=Tile+Work" alt="Tile Installation"
-                        style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <h2 style="color: var(--primary-color);">Tile & Stone</h2>
-                    <p class="service-desc" style="margin-top: 15px; margin-bottom: 20px;">From elegant ceramic to
-                        durable porcelain and natural stone, our title services cover every room in your house. Kitchen
-                        backsplashes, bathroom showers, and custom entryways are just the beginning.</p>
-                    <ul style="list-style: disc; margin-left: 20px; color: var(--text-color);">
-                        <li>Ceramic, Porcelain & Natural Stone</li>
-                        <li>Custom Showers & Backsplashes</li>
-                        <li>Heated Tile Floors</li>
-                        <li>Grout Restoration</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="service-block" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
-                <div style="flex: 1; min-width: 300px;">
-                    <img src="https://placehold.co/600x400/ccc/333?text=Vinyl+Plank" alt="Luxury Vinyl Plank"
-                        style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <h2 style="color: var(--primary-color);">Luxury Vinyl Plank (LVP)</h2>
-                    <p class="service-desc" style="margin-top: 15px; margin-bottom: 20px;">Get the look of wood or stone
-                        with the durability and waterproof properties of vinyl. LVP is an excellent choice for
-                        basements, kitchens, and busy households with pets and kids.</p>
-                    <ul style="list-style: disc; margin-left: 20px; color: var(--text-color);">
-                        <li>Waterproof Flooring Solutions</li>
-                        <li>Floating & Glue-Down Installation</li>
-                        <li>Durable & Scratch Resistant</li>
-                        <li>Wide Variety of Styles</li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <section class="cta"
-        style="background-color: var(--accent-color); padding: 60px 20px; text-align: center; color: white;">
-        <div class="container">
-            <h2 style="color: white; margin-bottom: 20px;">Ready to Transform Your Floors?</h2>
-            <a href="contact.html" class="btn"
-                style="background-color: white; color: var(--accent-color); border-color: white;">Get a Free Quote</a>
+    <!-- Call to Action -->
+    <section class="section-padding" style="background: var(--primary-color);">
+        <div class="container text-center" data-aos="zoom-in">
+            <h2 class="section-title">Ready to Transform Your Floors?</h2>
+            <br>
+            <a href="contact.html" class="btn btn-primary mt-4">Get a Free Quote</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-col">
+                <div class="footer-col" data-aos="fade-up">
                     <h3>Duffus Flooring</h3>
                     <p>Providing exceptional flooring solutions for residential and commercial spaces.</p>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
                     <h3>Quick Links</h3>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                    <p><i class="fas fa-envelope"></i> info@duffusflooring.com</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@duffusflooring.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -143,6 +139,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 
